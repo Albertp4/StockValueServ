@@ -11,11 +11,12 @@ public class MainController {
 
 	public static void main(String[] args) {
 		String ticker = "PYPL";
-		double stockRGV;
+		StockEvaluation stock = new StockEvaluation();
 		IntrinsicValue intrinsicValue = new IntrinsicValue();
 		
 		try {
-			stockRGV = intrinsicValue.calculateRGV(ticker);
+			stock.setTicker(ticker);
+			stock = intrinsicValue.calculateRGV(stock);
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

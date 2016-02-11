@@ -34,7 +34,7 @@ public class IntrinsicValue {
 	 * Retrieves Stock info using YahooFinance api, Check dependency details
 	 * in pom.xml.
 	 */
-	public StockEvaluation calculateRGV(StockEvaluation stockEval) throws IOException {
+	public StockInfo calculateRGV(StockInfo stockEval) throws IOException {
 		Stock stock = YahooFinance.get(stockEval.getTicker());
 		
 		stockEval.setPrice(stock.getQuote().getPrice().doubleValue());

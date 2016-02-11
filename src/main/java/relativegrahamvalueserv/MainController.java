@@ -11,7 +11,7 @@ public class MainController {
 
 	public static void main(String[] args) {
 		String ticker = "PYPL";
-		StockEvaluation stock = new StockEvaluation();
+		StockInfo stock = new StockInfo();
 		IntrinsicValue intrinsicValue = new IntrinsicValue();
 		
 		try {

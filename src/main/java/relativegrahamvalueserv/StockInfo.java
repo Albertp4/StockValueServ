@@ -6,7 +6,7 @@ package relativegrahamvalueserv;
  * POJO for stock that is being evaluated.
  *
  */
-public class StockEvaluation {
+public class StockInfo {
 	private double price;
 	private double eps;
 	private double growth;
@@ -14,7 +14,7 @@ public class StockEvaluation {
 	private double intrinsicValue;
 	private double rgv;
 	
-	public StockEvaluation(){
+	public StockInfo(){
 		
 	}
 	
